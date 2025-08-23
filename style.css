@@ -138,12 +138,14 @@ h1 {
   font-size: 3rem;
 }
 
-.btn-container {
+.btn-container,
+.project-links {
   display: flex;
   gap: 10px;
 }
 
-.desc-btn {
+.desc-btn,
+.project-link {
   font-size: 1rem;
   padding: 0.5rem;
   border-radius: 5px;
@@ -153,7 +155,8 @@ h1 {
   cursor: pointer;
 }
 
-.desc-btn:hover {
+.desc-btn:hover,
+.project-link:hover {
   box-shadow: 5px 5px var(--secondary-600);
 }
 
@@ -173,7 +176,8 @@ h2 {
   font-size: 18px;
 }
 
-.tech-list {
+.tech-list,
+.project-tech-stack {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -192,4 +196,33 @@ h2 {
 .tech-item:hover {
   font-weight: 600;
   background-color: var(--primary);
+}
+
+/***** Project Section ******/
+
+.project-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.project-card {
+  max-width: 350px;
+  min-height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 10px 5px var(--primary);
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
