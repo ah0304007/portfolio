@@ -21,7 +21,7 @@
 }
 
 body {
-  background-color: var(--neutral);
+  background-color: var(--neutral-400);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,11 +218,58 @@ h2 {
   gap: 0.5rem;
 }
 
-.project-card:hover {
+.project-card:hover,
+.exp-card:hover {
   box-shadow: 0 0 10px 5px var(--primary);
 }
 
 .project-title {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+/******* Experiences Section *********/
+
+.exp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.exp-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 0.5rem;
+  max-width: 700px;
+}
+
+.exp-prop {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.exp-prop h3,
+.exp-prop h4 {
+  margin: 0;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.exp-desc ul {
+  position: relative;
+  left: 20px;
+  width: 95%;
+}
+
+.exp-tech-stack {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1rem;
 }
