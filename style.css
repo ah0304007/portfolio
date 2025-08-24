@@ -156,8 +156,11 @@ h1 {
 }
 
 .desc-btn:hover,
-.project-link:hover {
+.project-link:hover,
+.contact-link:hover {
   box-shadow: 5px 5px var(--secondary-600);
+  transform: translateY(-5px);
+  transition: ease-in 0.1s;
 }
 
 h2 {
@@ -272,4 +275,36 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 4fr;
   gap: 1rem;
+}
+
+/****** Contact Section *******/
+
+#skills,
+#projects,
+#experience,
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-link {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+}
+
+.contact-link i {
+  font-size: 2rem;
 }
