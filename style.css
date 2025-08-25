@@ -32,7 +32,8 @@ a {
 
 nav {
   border-radius: 10px;
-  margin: 1rem 2rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -49,7 +50,6 @@ nav {
 .title {
   font-size: 2.5rem;
   font-weight: 700;
-  margin: auto 1rem;
 }
 
 .links {
@@ -74,16 +74,6 @@ nav {
   background-color: var(--primary);
   color: var(--secondary-400);
   transition-duration: 0.5s;
-}
-
-.theme-changer {
-  margin: auto 1rem;
-}
-
-.theme-changer img {
-  cursor: pointer;
-  height: 2rem;
-  aspect-ratio: 1;
 }
 
 main {
@@ -160,16 +150,8 @@ h2 {
   font-size: 2rem;
 }
 
-.skill-container {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  gap: 1rem;
+.tech-list {
   margin-top: 1rem;
-}
-
-.category {
-  font-weight: 600;
-  font-size: 18px;
 }
 
 .tech-list,
@@ -198,6 +180,7 @@ h2 {
 
 .project-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   flex-wrap: wrap;
   margin-top: 1rem;
